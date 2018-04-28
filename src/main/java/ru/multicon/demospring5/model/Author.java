@@ -29,6 +29,9 @@ public class Author {
         this.books = books;
     }
 
+    public Long getId() {
+        return id;
+    }
     public String getFirstName() {return firstName;}
 
     public void setFirstName(String firstName) {
@@ -44,14 +47,6 @@ public class Author {
 
     public Set<Book> getBooks() { return books; }
     public void setBooks(Set<Book> books) { this.books = books; }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     @Override
     public boolean equals(Object o) {
